@@ -1,0 +1,27 @@
+.footer {
+    background-color: #000; /* Usa el color del header */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #4CAF50;
+  }
+  
+  .footer__content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer__logo {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: auto;
+  }
+  
+  .footer__text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  

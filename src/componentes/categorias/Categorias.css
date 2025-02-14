@@ -1,0 +1,90 @@
+/* Home.css */
+
+body {
+  background-color: red !important;
+}
+
+.home-container {
+  background-color: #03122f; /* Fondo negro */
+  padding: 20px;
+  color: white; /* Texto blanco */
+}
+
+.categoria-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categoria-0 {
+  background-color: #e57373; /* Rojo claro */
+  height: 50px;
+  width: 150px;
+}
+
+.categoria-1 {
+  background-color: #64b5f6; /* Azul claro */
+  height: 50px;
+  width: 150px;
+}
+
+.categoria-2 {
+  background-color: #81c784; /* Verde claro */
+  height: 50px;
+  width: 150px;
+}
+
+.categoria-3 {
+  background-color: #ffd54f; /* Amarillo claro */
+  height: 50px;
+  width: 150px;
+}
+
+.video-container { 
+  display: flex; 
+  flex-wrap: wrap; /* Permite que los videos se distribuyan en múltiples líneas */ 
+  justify-content: center; 
+  gap: 10px; /* Espacio entre los cuadros */ 
+} 
+
+.video-cuadro { 
+  border: 2px solid #ccc; 
+  padding: 10px; 
+  margin: 10px; 
+  border-radius: 5px; 
+  background-color: #f9f9f9; 
+  width: fit-content; /* Ajusta el tamaño del contenedor al tamaño del contenido */ 
+  height: auto; 
+  list-style-type: none; /* Eliminamos el estilo de lista */ 
+  display: flex; 
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: center; /* Centra verticalmente el contenido del cuadro */ 
+} 
+
+.video-cuadro iframe { 
+  width: 320px; /* Ajusta el tamaño del video horizontalmente */ 
+  height: 180px; /* Ajusta el tamaño del video verticalmente */ 
+  border-radius: 5px; 
+} 
+
+.video-actions {
+  margin-top: 10px;
+}
+
+.video-actions button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-actions button:hover {
+  background-color: #ddd;
+}

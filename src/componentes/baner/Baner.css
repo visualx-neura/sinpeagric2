@@ -1,0 +1,41 @@
+
+.banner {
+  background-image: url(agricultura.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Color del texto, puedes ajustarlo */
+  text-align: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+  
+}
+
+.banner__logo {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 125px; /* Ajusta el valor según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0; /* Enviar al fondo */
+  opacity: 0.8; /* Ajusta la transparencia */
+  
+  background-size: cover; /* Asegura que la imagen de fondo cubra toda el área */
+}
+
+
+.banner__subtitle {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 250px; /* Ajusta el valor según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  
+}

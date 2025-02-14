@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+  border: 5px solid #4CAF50;
+}
+
+.logo {
+  font-size: 0.5rem;
+  font-weight: bold;
+  width: 100px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem; /* Separar más los botones */
+  
+}
+
+.header__button {
+  background-color: #4CAF50;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none; /* Eliminar la línea subrayada */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Botones más grandes */
+  font-size: 1.2rem; /* Letras más grandes */
+  font-weight: bold;
+  border-radius: 10px; /* Bordes más redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones */
+  width: 150px; /* Ancho fijo */
+  height: 50px; /* Alto fijo */
+  box-sizing: border-box; /* Incluir padding y border en el tamaño */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__button:hover {
+  background-color:  #2E7D32;
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+.header__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(34, 113, 209, 0.5);
+}
+
