@@ -1,10 +1,12 @@
 .footer {
     background-color: #000; /* Usa el color del header */
+    width: 100%;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid #4CAF50;
+    
   }
   
   .footer__content {
