@@ -51,3 +51,43 @@
   box-shadow: 0 0 0 3px rgba(34, 113, 209, 0.5);
 }
 
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .header__nav {
+    gap: 1.5rem; /* Reduce el espacio entre botones */
+  }
+
+  .header__button {
+    width: auto; /* Quita el ancho fijo */
+    font-size: 1rem; /* Reduce el tamaño de letra */
+    padding: 0.5rem 1rem; /* Ajusta el relleno */
+  }
+}
+
+/* Media queries para celulares */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem; /* Reduce el padding en móviles */
+  }
+
+  .logo {
+    font-size: 0.8rem; /* Aumenta ligeramente el tamaño del texto */
+    width: 70px; /* Permite que ocupe más espacio si es necesario */
+  }
+
+  .header__nav {
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 1rem; /* Reduce el espacio entre botones */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .header__button {
+    width: 100%; /* Botones de ancho completo */
+    font-size: 0.9rem; /* Reduce aún más el tamaño de la letra */
+    padding: 0.5rem; /* Ajusta el relleno */
+  }
+}

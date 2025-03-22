@@ -39,3 +39,39 @@
   transform: translateX(-50%);
   
 }
+@media (max-width: 768px) {
+  .banner {
+    height: 400px; /* Reduce la altura */
+  }
+
+  .banner__logo {
+    width: 300px; /* Reduce tamaño del logo */
+    height: 300px;
+    top: 100px; /* Ajusta la posición */
+  }
+
+  .banner__subtitle {
+    font-size: 1.2rem; /* Texto más pequeño */
+    top: 200px; /* Ajusta la posición */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+  .banner {
+    height: 120px; /* Reduce más la altura */
+    width: 450px;
+    
+  }
+
+  .banner__logo {
+    width: 100px; /* Más pequeño aún */
+    height: 100px;
+    top: 200px;
+  }
+
+  .banner__subtitle {
+    font-size: 1rem; /* Texto aún más pequeño */
+    top: 150px;
+  }
+}

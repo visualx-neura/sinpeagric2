@@ -96,3 +96,38 @@
 .view-button:hover, .download-button:hover {
   background-color: #367c39;
 }
+
+@media (max-width: 1024px) {
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+  }
+}
+
+/* Media queries para celulares */
+@media (max-width: 768px) {
+  .home-wrapper {
+    padding: 10px; /* Reduce padding para pantallas pequeñas */
+  }
+
+  .home-title {
+    font-size: 22px; /* Ajusta tamaño del título */
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr; /* Una sola columna para celulares */
+    gap: 10px; /* Reduce espacio entre tarjetas */
+  }
+
+  .video-frame,
+  .video-image,
+  .video-documento-frame {
+    height: auto; /* Ajusta automáticamente la altura */
+    max-height: 300px; /* Altura máxima para pantallas pequeñas */
+  }
+
+  .video-card,
+  .image-card,
+  .document-card {
+    max-width: 100%; /* Usa todo el ancho disponible */
+  }
+}
