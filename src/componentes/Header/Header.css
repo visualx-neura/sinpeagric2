@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,6 +11,7 @@
   background-color: #000;
   color: white;
   border: 5px solid #4CAF50;
+  
 }
 
 .logo {
@@ -55,6 +61,7 @@
   .header {
     flex-direction: column; /* Cambia la dirección a columna */
     align-items: flex-start; /* Alinea los elementos al inicio */
+    width: 120%;
   }
 
   .header__nav {
@@ -72,6 +79,7 @@
 @media (max-width: 768px) {
   .header {
     padding: 0.5rem; /* Reduce el padding en móviles */
+    width: 99%;
   }
 
   .logo {
@@ -80,13 +88,17 @@
   }
 
   .header__nav {
+    display: flex;
     flex-direction: column; /* Coloca los botones en una columna */
+    align-items: center;
     gap: 1rem; /* Reduce el espacio entre botones */
     width: 100%; /* Ocupa todo el ancho disponible */
   }
 
   .header__button {
-    width: 100%; /* Botones de ancho completo */
+
+    width: 70%; /* Botones de ancho completo */
+    
     font-size: 0.9rem; /* Reduce aún más el tamaño de la letra */
     padding: 0.5rem; /* Ajusta el relleno */
   }

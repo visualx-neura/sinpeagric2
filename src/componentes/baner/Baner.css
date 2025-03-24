@@ -1,4 +1,9 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  
+}
 .banner {
   background-image: url(agricultura.jpg);
   width: 100%;
@@ -39,9 +44,11 @@
   transform: translateX(-50%);
   
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .banner {
     height: 400px; /* Reduce la altura */
+    width: 150%;
+    
   }
 
   .banner__logo {
@@ -57,10 +64,10 @@
 }
 
 /* Ajustes para pantallas pequeñas (celulares) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .banner {
     height: 120px; /* Reduce más la altura */
-    width: 450px;
+    width: 105%;
     
   }
 
